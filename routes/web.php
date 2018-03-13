@@ -40,3 +40,12 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 
+// 验证码
+Route::get('captcha', 'Auth\ValidateController@create')->name('create');
+
+
+
+
+
+
+
