@@ -43,6 +43,12 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 // 验证码
 Route::get('captcha', 'Auth\ValidateController@create')->name('create');
 
+// 个人页路由
+Route::resource('users', 'UserController', ['only' => ['show', 'update', 'edit']]);
+
+
+
+
 
 
 
