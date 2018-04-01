@@ -32,7 +32,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             <span class="user-avatar pull-left" style="margin-right:8px; margin-top:-5px;">
-                                <img src="https://lccdn.phphub.org/uploads/avatars/22397_1519205627.jpg?imageView2/1/w/100/h/100" class="img-responsive img-circle" width="30px" height="30px">
+                                <img src="{{ $user -> avatar }}" class="img-responsive img-circle" width="30px" height="30px">
                             </span>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
