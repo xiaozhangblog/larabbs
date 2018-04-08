@@ -47,11 +47,4 @@ Route::get('captcha', 'Auth\ValidateController@create')->name('create');
 Route::resource('users', 'UserController', ['only' => ['show', 'update', 'edit']]);
 
 
-
-
-
-
-
-
-
-
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
