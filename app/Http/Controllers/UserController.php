@@ -22,14 +22,14 @@ class UserController extends Controller
     public function edit(User $user)
     {
         // authorize 方法来检验用户是否授权
-        $this -> authorize('update',$user);
+      //  $this -> authorize('update',$user);
         return view('users.edit',compact('user'));
     }
     // 更新用户数据
     public function update(UserRequest $request,ImageUpload $upload, User $user)
     {
         // authorize 方法来检验用户是否授权
-        $this -> authorize('update',$user);
+      //  $this -> authorize('update',$user);
         $data = $request -> all();
         // 处理上传图片保存并返回路径
         if($request -> avatar){
