@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function __construct()
     {
-        $this -> middleware('auth',['except' => ['show']]);
+        $this->middleware('auth', ['except' => ['show']]);
     }
     // 用户个人页
     public function show(User $user)

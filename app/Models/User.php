@@ -26,4 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    // 用户模型中新增与话题模型的关联
+    public function topics()
+    {
+        return $this->hasMany(Topic::class);
+    }
 }
