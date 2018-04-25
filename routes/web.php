@@ -47,7 +47,9 @@ Route::get('captcha', 'Auth\ValidateController@create')->name('create');
 Route::resource('users', 'UserController', ['only' => ['show', 'update', 'edit']]);
 
 // 帖子列表
-Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'create', 'store', 'update', 'edit', 'destroy']]);
+
+Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show');
 
 // 帖子分类
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
