@@ -8448,6 +8448,10 @@ body {
   color: #b3b3b3;
 }
 
+.users-show-page .list-group .list-group-item .reply-content {
+  margin: 6px 0;
+}
+
 .users-show-page .pagination {
   margin: 12px 0;
 }
@@ -8944,5 +8948,19 @@ body {
   margin-bottom: 12px;
   border: 0;
   border-top: 1px solid #dcebf5;
+}
+
+.topic-reply hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.topic-reply a {
+  color: inherit;
+}
+
+.topic-reply .meta {
+  font-size: .9em;
+  color: #b3b3b3;
 }
 
