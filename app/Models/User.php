@@ -10,6 +10,8 @@ use Spatie\Permission\Traits\HasRoles;
 class User extends Authenticatable
 {
     use HasRoles;
+    protected $guard_name = 'web';
+
     use Notifiable {
         notify as protected laravelNotify;
     }
