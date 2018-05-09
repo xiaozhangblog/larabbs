@@ -23,4 +23,9 @@ class TopicObserver
             $topic->slug = app(SlugTranslate::class)->translate($topic->title);
         }
     }
+    // 删除帖子的时候同时删除所有回复
+    public function deleted(Topic $topic)
+    {
+        \DB::table('replies')->where('topic_id',$topic->id)->delete();
+    }
 }
